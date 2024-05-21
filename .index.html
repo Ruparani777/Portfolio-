@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+             </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi,I'm <span>Ruparani </span><br>Thupakula </h1>
+        </div>
+       </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div clas="about-col-1">
+                     <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iure eaque doloremque. Vitae excepturi debitis earum laboriosam quos animi itaque quasi voluptatum labore! Nihil rerum dolore ducimus deserunt aliquam debitis.</p>
+                    <div class="tab-titles">
+                        <p class="tab-titles active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-titles" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-titles" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br>Designing web</li>
+                            <li><span>Python</span><br>Codes</li>
+                            <li><span>FRont end</span><br>Designing web</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab"ID="Experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>ML intern</li>
+                            <li><span>2022-2022</span><br>Web dev</li>
+                            <li><span>FRont end</span><br>Designing web</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Designing web</li>
+                            <li><span>2016-2019</span><br></li>
+                            <li><span>2015-2016</span><br>Designing web</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">MyServices</h1>
+        <div class="service-list">
+            <div>
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia earum, 
+                optio repellendus, dolor libero reiciendis non iure quisquam sapiente est distinctio fuga delectus eius porro commodi perferendis velit quas.</p>
+                <a href="#">learn more</a>
+           </div>
+            <div>
+            <h2>ML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia earum, optio repellendus, dolor libero reiciendis non iure quisquam sapiente est distinctio fuga delectus eius porro commodi perferendis velit quas.</p>
+            <a href="#">learn more</a>
+          </div>
+          </div>
+</div>
+    <script>
+        var tablinks=document.getElementByClassName("tab-links");
+        var tabcontents=document.getElementByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablinks.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+        }
+    </script>
+</body>
+</html>
